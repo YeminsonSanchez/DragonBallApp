@@ -1,0 +1,17 @@
+html {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+body {
+  background-image: url('src/assets/characters.png'),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.959) 0%,
+      #a40010 20.46%,
+      #000000 100%
+    );
+  background-repeat: no-repeat;
+  background-position-x: center;
+}

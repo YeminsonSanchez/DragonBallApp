@@ -4,12 +4,13 @@ export const Header = () => {
   return (
     <header>
       <nav>
-        <div className='navbar'>
-          <h2>dragon ball</h2>
-        </div>
+        <div className='navbar'></div>
       </nav>
       <div>
-        <h1>sera una imagen</h1>
+        <img
+          src='src/assets/logo.png'
+          alt='imagen del logo oficial de dragon ball super'
+        />
       </div>
     </header>
   )

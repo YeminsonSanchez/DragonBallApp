@@ -1,8 +1,11 @@
-import { AppRouter } from './router/AppRouter'
+import {AppRouter} from './router/AppRouter'
+
 
 function DragonBallApp() {
   return (
-    <AppRouter/>
+    <div className='layout'>
+      <AppRouter />
+    </div>
   )
 }
 

@@ -1,6 +1,19 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr, 1fr;
+}
+
+
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
 
+.imgCharacter {
 
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
