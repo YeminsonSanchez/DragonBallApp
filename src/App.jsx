@@ -1,10 +1,14 @@
 import './App.css'
+import {LayoutApp} from './layouts/LayoutApp'
+import {HomePage} from './pages/homePage/HomePage'
 
 function App() {
   return (
-    <div className='App'>
-      <h1>hello World</h1>
-    </div>
+    <LayoutApp>
+      <main>
+        <HomePage />
+      </main>
+    </LayoutApp>
   )
 }
 
