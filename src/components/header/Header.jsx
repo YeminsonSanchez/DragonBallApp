@@ -5,11 +5,23 @@ export const Header = () => {
     <header>
       <nav>
         <div className='navbar'>
-          <h2>dragon ball</h2>
+          <div className='search'>
+            <input className='inputSearch' type='text' />
+            <p>Buscar por nombre</p>
+          </div>
+
+          <div className='filter'>
+            <div className='filterSelect'>icon</div>
+            <p>Filtrar por universo</p>
+          </div>
         </div>
       </nav>
-      <div>
-        <h1>sera una imagen</h1>
+      <div className='container'>
+        <img
+          src='src/assets/logo.png'
+          alt='imagen del logo oficial de dragon ball super'
+        />
+        <h1 className='title'>Prueba del Dragon</h1>
       </div>
     </header>
   )
