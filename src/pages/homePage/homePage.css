@@ -1,17 +1,25 @@
-html {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-}
-
 body {
-  background-image: url('src/assets/characters.png'),
-    linear-gradient(
+  background: linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.959) 0%,
-      #a40010 20.46%,
-      #000000 100%
-    );
+      rgba(206, 0, 21, 0) 0%,
+      #bd0215 33.46%,
+      #252525 100%
+    ),
+    url('src/assets/characters.png'), #252525;
   background-repeat: no-repeat;
   background-position-x: center;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+
+main {
+  max-width: auto;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
