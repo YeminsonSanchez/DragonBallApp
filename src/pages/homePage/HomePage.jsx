@@ -1,10 +1,11 @@
 import {Card} from '../../components/card/Card'
 import {Header} from '../../components/header/Header'
-import './homePage.css'
+
+import styles from './homePage.module.css'
 
 export const HomePage = () => {
   return (
-    <div className='mainContainer'>
+    <div className={styles.mainContainer}>
       <Header />
       <main>
         <Card />

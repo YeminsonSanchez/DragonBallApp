@@ -1,0 +1,269 @@
+.mainContainer {
+  min-width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(206, 0, 21, 0) 0%,
+      #bd0215 33.46%,
+      #252525 100%
+    ),
+    url('.././public/assets/characters.png'), #252525;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    display: grid;
+    grid-template-areas: 'header' 'navbar' 'main';
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  nav {
+    grid-area: navbar;
+    min-width: 10rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    width: auto;
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: navbar;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar {
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem 1rem;
+  width: auto;
+}
+
+.container {
+  padding-top: 110px;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  flex-direction: column;
+}
+
+.containerIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.containerMain {
+  max-width: 80%;
+  display: grid;
+  gap: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  grid-auto-rows: 22rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.cardContainer {
+  padding-top: 30px;
+  min-width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card {
+  background: radial-gradient(
+    153.9% 81% at 50% 86.43%,
+    #ebd300 0%,
+    #ce0014 100%
+  );
+  border: 3px solid #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 250px;
+  height: 280px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  margin: 1rem;
+}
+
+@keyframes animatedCard {
+  0% {
+    background: radial-gradient(
+      153.9% 81% at 50% 86.43%,
+      #ebd300 0%,
+      #ce0014 100%
+    );
+  }
+  100% {
+  }
+}
+
+.cardBody {
+  margin-top: 20px;
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+}
+
+h2 {
+  position: absolute;
+  bottom: 25px;
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+
+.cardText {
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.cardImage {
+  margin-top: 110px;
+  position: relative;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.cardImage img {
+  display: flex;
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 200px;
+  height: 260px;
+  object-fit: contain;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: start;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background: radial-gradient(50% 50% at 50% 50%, #ebd300 0%, #ce0014 100%),
+    linear-gradient(0deg, #ffffff, #ffffff);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.btn {
+  margin-top: 7.3rem;
+  opacity: 0;
+}
+
+.card:hover > .btn {
+  opacity: 1;
+  z-index: 999;
+}
+
+.btn button {
+  background: #ebdedf;
+  border: none;
+  border-radius: 10px;
+  color: #252525;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.containerFilter {
+  display: inline-block;
+}
+
+.rowFilter {
+  display: flex;
+  background: #fff;
+  border-radius: 100px;
+  border: 1px solid #3b3b3b;
+}
+
+.rowFilter option {
+  background: transparent;
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  padding: 0;
+  width: 0;
+  outline: none;
+  transition: all 0.6s;
+}
+
+.iconFilter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  margin: 7px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.iconFilter i {
+  position: absolute;
+  color: #222;
+}
+
+.iconFilter .fa-xmark {
+  opacity: 0;
+}
+
+.containerFilter:hover option,
+option:focus,
+option:not(:placeholder-shown) {
+  width: 250px;
+  padding: 1rem;
+  padding-left: 1.5rem;
+}
+
+.containerFilter:hover .fa-filter,
+option:focus ~ .iconFilter .fa-filter,
+option:not(:placeholder-shown) ~ .iconFilter .fa-filter {
+  opacity: 0;
+}

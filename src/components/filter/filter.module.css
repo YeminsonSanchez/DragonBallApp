@@ -1,0 +1,93 @@
+.containerFilter {
+  display: inline-block;
+}
+
+.rowFilter {
+  display: flex;
+  background: #fff;
+  border-radius: 100px;
+  border: 1px solid #3b3b3b;
+}
+
+.rowFilter option {
+  background: transparent;
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  padding: 0;
+  width: 0;
+  outline: none;
+  transition: all 0.6s;
+}
+
+.iconFilter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  margin: 7px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.iconFilter i {
+  position: absolute;
+  color: #222;
+}
+
+.iconFilter .fa-xmark {
+  opacity: 0;
+}
+
+.containerFilter:hover select select:focus,
+select:not(:placeholder-shown) {
+  width: 250px;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  border-radius: 25px;
+}
+
+.containerFilter:hover .fa-filter,
+select:focus ~ .iconFilter .fa-filter,
+select:not(:placeholder-shown) ~ .iconFilter .fa-filter {
+  opacity: 0;
+}
+
+select {
+  background: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+#universe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+}
+
+option{
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  padding: 0;
+  width: 0;
+  outline: none;
+  transition: all 0.6s;
+}
