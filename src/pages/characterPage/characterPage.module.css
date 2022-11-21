@@ -1,0 +1,127 @@
+.characterMainContainer {
+  min-width: 100vh;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: 'header' 'main';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #ce0014 0%, #000000 60.04%);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top;
+  color: #ffffff;
+}
+
+.headerContainer {
+  grid-area: header;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.characterContainer {
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.cardImage {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+}
+
+.description {
+  min-width: 200px;
+  display: flex;
+  font-weight: 600;
+  font-size: 2rem;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.titleDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background: #ce0014;
+  width: auto;
+  border-radius: 5px 0 0 5px;
+}
+
+.detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 5px;
+  background: #1e1e1e;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.img {
+  padding-right: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding-top: 20px;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.headercont {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.nameCharacter {
+  margin-bottom: 60px;
+  font-size: 45px;
+}
+
+.universeCharacter {
+  margin-bottom: 60px;
+  font-size: 1.5rem;
+  background: #9747ff;
+  border-radius: 25px;
+  padding: 5px;
+}

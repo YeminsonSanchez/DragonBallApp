@@ -1,0 +1,56 @@
+.containerSearch {
+  display: inline-block;
+}
+
+.rowSearch {
+  display: flex;
+  background: #fff;
+  border-radius: 100px;
+  border: 1px solid #3b3b3b;
+}
+
+.rowSearch input {
+  background: transparent;
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  padding: 0;
+  width: 0;
+  outline: none;
+  transition: all 0.6s;
+}
+
+.iconSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  margin: 7px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.iconSearch i {
+  position: absolute;
+  color: #222;
+}
+
+.iconSearch .fa-xmark {
+  opacity: 0;
+}
+
+.containerSearch:hover input,
+input:focus,
+input:not(:placeholder-shown) {
+  width: 250px;
+  padding: 1rem;
+  padding-left: 1.5rem;
+}
+
+.containerSearch:hover .fa-search,
+input:focus ~ .iconSearch .fa-search,
+input:not(:placeholder-shown) ~ .iconSearch .fa-search {
+  opacity: 0;
+}

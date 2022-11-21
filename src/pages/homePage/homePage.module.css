@@ -1,0 +1,41 @@
+.mainContainer {
+  min-width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(206, 0, 21, 0) 0%,
+      #bd0215 33.46%,
+      #252525 100%
+    ),
+    url('./public/assets/characters.png'), #252525;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    display: grid;
+    grid-template-areas: 'header' 'navbar' 'main';
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  nav {
+    grid-area: navbar;
+    min-width: 10rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    width: auto;
+  }
+}
